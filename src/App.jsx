@@ -264,7 +264,7 @@ const App = () => {
                   // console.log(item, state.walletAddress)
                   const from = String(item.from)
 
-                  return from !== state.walletAddress && (
+                  return from == state.walletAddress && (
                     <div className="item" key={i}>
                       <p id="eth">
                         {item.amount}{" "}
